@@ -644,3 +644,6 @@ Uten begge reglene ville én av bedriftene fortsatt kunne nå den andre.
 Så de seks linjene dekker disse seks kombinasjonene:
 LinjeBlokkerer1Bedrift 1 → Bedrift 22Bedrift 2 → Bedrift 13Bedrift 1 → Bedrift 34Bedrift 3 → Bedrift 15Bedrift 2 → Bedrift 36Bedrift 3 → Bedrift 2
 Gir det mening nå? 😊
+
+
+<video controls src="20260609-1057-21.1993918.mp4" title="Title"></video>
