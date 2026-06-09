@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logg inn – KontorLeie AS</title>
+
+  <!-- Samme stilark som resten av siden -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGASJONSBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">KontorLeie AS</a>
+  </nav>
+
+  <!-- INNLOGGINGSBOKS -->
+  <div class="login-wrapper">
+    <div class="login-box">
+      <h2>Kundeportal</h2>
+      <p class="login-desc">Logg inn for å se nettverksdokumentasjonen din.</p>
+
+      <!-- Feilmelding vises bare hvis brukernavn/passord er feil -->
+      <p id="feilmelding" class="feilmelding" style="display:none;">
+        Feil brukernavn eller passord. Prøv igjen.
+      </p>
+
+      <!-- INNLOGGINGSSKJEMA -->
+      <!-- Når brukeren trykker "Logg inn" kjøres funksjonen sjekkLogin() fra login.js -->
+      <form onsubmit="sjekkLogin(event)">
+
+        <label for="brukernavn">Brukernavn</label>
+        <input type="text" id="brukernavn" placeholder="ditt@brukernavn.no" required />
+
+        <label for="passord">Passord</label>
+        <input type="password" id="passord" placeholder="••••••••" required />
+
+        <button type="submit" class="btn full">Logg inn</button>
+      </form>
+
+      <a href="index.html" class="tilbake">← Tilbake til forsiden</a>
+    </div>
+  </div>
+
+  <!-- Kobler til JavaScript-filen som håndterer innloggingslogikken -->
+  <script src="js/login.js"></script>
+
+</body>
+</html>
