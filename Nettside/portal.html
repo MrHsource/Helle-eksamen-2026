@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kundeportal – KontorLeie AS</title>
+
+  <!-- Samme stilark som resten av siden -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGASJONSBAR med logg ut-knapp -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">KontorLeie AS</a>
+    <!-- Logg ut-knappen kaller loggUt()-funksjonen fra portal.js -->
+    <button class="btn" onclick="loggUt()">Logg ut</button>
+  </nav>
+
+  <!-- VELKOMST-SEKSJON -->
+  <section class="hero liten">
+    <h1>Velkommen til kundeportalen</h1>
+    <p>Her finner du dokumentasjon for nettverksoppsettet ditt.</p>
+  </section>
+
+  <!-- DOKUMENTASJONSLISTE: lenker til de ulike dokumentene -->
+  <section class="services">
+    <h2>Tilgjengelig dokumentasjon</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Nettverksoppsett</h3>
+        <p>Topologi, VLAN-konfigurasjon og subnett-oversikt for din bedrift.</p>
+        <a href="docs/nettverk.md" class="btn liten">Se dokument</a>
+      </div>
+
+      <div class="card">
+        <h3>DNS-oppsett</h3>
+        <p>DNS-server, records og innstillinger som gjelder for din bedrift.</p>
+        <a href="docs/dns.md" class="btn liten">Se dokument</a>
+      </div>
+
+      <div class="card">
+        <h3>Active Directory</h3>
+        <p>Veiledning for oppretting av brukere, grupper og tilgangsstyring.</p>
+        <a href="docs/ad-veileder.md" class="btn liten">Se dokument</a>
+      </div>
+
+      <div class="card">
+        <h3>Brannmur og portstyring</h3>
+        <p>ASA-konfigurasjon og ACL-regler som beskytter nettverket ditt.</p>
+        <a href="docs/brannmur.md" class="btn liten">Se dokument</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kobler til JavaScript som sjekker om brukeren faktisk er innlogget -->
+  <script src="js/portal.js"></script>
+
+</body>
+</html>
