@@ -6,3 +6,7 @@
 
 11:10 jeg er ferdig med veiledningen og jeg skal begynne på utvikling
 
+12:40 ferdig med nettsiden og skal fortsette på drift
+
+12:50 ai logg
+
